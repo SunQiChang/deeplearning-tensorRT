@@ -1,0 +1,5 @@
+cfg:None 
+cfg_:{}  
+conv_layer:<class 'torch.nn.modules.conv.Conv2d'>  
+args:(512, 512, 3)  
+kwargs:{'stride': 1, 'padding': 1, 'dilation': 1, 'groups': 1, 'bias': False}

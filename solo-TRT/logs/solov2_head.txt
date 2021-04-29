@@ -1,0 +1,257 @@
+seg_num_grids:[40, 36, 24, 16, 12]
+seg_num_grid:40, kernel_feat:torch.Size([1, 258, 40, 40]) x:torch.Size([1, 1, 100, 152]), coord_feat:torch.Size([1, 2, 100, 152]), ins_kernel_feat:torch.Size([1, 258, 100, 152])
+feat cate_feat:torch.Size([1, 256, 40, 40]) kernel_feat:torch.Size([1, 258, 40, 40])
+ solo_kernel:Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+mask  kernel_feat:torch.Size([1, 512, 40, 40]) kernel_pred:torch.Size([1, 256, 40, 40])
+cate cate_feat:torch.Size([1, 512, 40, 40]) cate_pred:torch.Size([1, 80, 40, 40])
+solo_cate:Conv2d(512, 80, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+eval cate cate_feat:torch.Size([1, 512, 40, 40]) cate_pred:torch.Size([1, 40, 40, 80])
+i:0, kernel_layer:ConvModule(
+  (conv): Conv2d(258, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:1, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:2, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:3, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:0, cate_conv:ConvModule(
+  (conv): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:1, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:2, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:3, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)==================================================================================
+seg_num_grid:36, kernel_feat:torch.Size([1, 258, 36, 36]) x:torch.Size([1, 1, 100, 152]), coord_feat:torch.Size([1, 2, 100, 152]), ins_kernel_feat:torch.Size([1, 258, 100, 152])
+feat cate_feat:torch.Size([1, 256, 36, 36]) kernel_feat:torch.Size([1, 258, 36, 36])
+ solo_kernel:Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+mask  kernel_feat:torch.Size([1, 512, 36, 36]) kernel_pred:torch.Size([1, 256, 36, 36])
+cate cate_feat:torch.Size([1, 512, 36, 36]) cate_pred:torch.Size([1, 80, 36, 36])
+solo_cate:Conv2d(512, 80, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+eval cate cate_feat:torch.Size([1, 512, 36, 36]) cate_pred:torch.Size([1, 36, 36, 80])
+i:0, kernel_layer:ConvModule(
+  (conv): Conv2d(258, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:1, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:2, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:3, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:0, cate_conv:ConvModule(
+  (conv): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:1, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:2, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:3, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)==================================================================================
+seg_num_grid:24, kernel_feat:torch.Size([1, 258, 24, 24]) x:torch.Size([1, 1, 50, 76]), coord_feat:torch.Size([1, 2, 50, 76]), ins_kernel_feat:torch.Size([1, 258, 50, 76])
+feat cate_feat:torch.Size([1, 256, 24, 24]) kernel_feat:torch.Size([1, 258, 24, 24])
+ solo_kernel:Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+mask  kernel_feat:torch.Size([1, 512, 24, 24]) kernel_pred:torch.Size([1, 256, 24, 24])
+cate cate_feat:torch.Size([1, 512, 24, 24]) cate_pred:torch.Size([1, 80, 24, 24])
+solo_cate:Conv2d(512, 80, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+eval cate cate_feat:torch.Size([1, 512, 24, 24]) cate_pred:torch.Size([1, 24, 24, 80])
+i:0, kernel_layer:ConvModule(
+  (conv): Conv2d(258, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:1, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:2, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:3, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:0, cate_conv:ConvModule(
+  (conv): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:1, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:2, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:3, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)==================================================================================
+seg_num_grid:16, kernel_feat:torch.Size([1, 258, 16, 16]) x:torch.Size([1, 1, 25, 38]), coord_feat:torch.Size([1, 2, 25, 38]), ins_kernel_feat:torch.Size([1, 258, 25, 38])
+feat cate_feat:torch.Size([1, 256, 16, 16]) kernel_feat:torch.Size([1, 258, 16, 16])
+ solo_kernel:Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+mask  kernel_feat:torch.Size([1, 512, 16, 16]) kernel_pred:torch.Size([1, 256, 16, 16])
+cate cate_feat:torch.Size([1, 512, 16, 16]) cate_pred:torch.Size([1, 80, 16, 16])
+solo_cate:Conv2d(512, 80, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+eval cate cate_feat:torch.Size([1, 512, 16, 16]) cate_pred:torch.Size([1, 16, 16, 80])
+i:0, kernel_layer:ConvModule(
+  (conv): Conv2d(258, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:1, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:2, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:3, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:0, cate_conv:ConvModule(
+  (conv): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:1, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:2, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:3, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)==================================================================================
+seg_num_grid:12, kernel_feat:torch.Size([1, 258, 12, 12]) x:torch.Size([1, 1, 25, 38]), coord_feat:torch.Size([1, 2, 25, 38]), ins_kernel_feat:torch.Size([1, 258, 25, 38])
+feat cate_feat:torch.Size([1, 256, 12, 12]) kernel_feat:torch.Size([1, 258, 12, 12])
+ solo_kernel:Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+mask  kernel_feat:torch.Size([1, 512, 12, 12]) kernel_pred:torch.Size([1, 256, 12, 12])
+cate cate_feat:torch.Size([1, 512, 12, 12]) cate_pred:torch.Size([1, 80, 12, 12])
+solo_cate:Conv2d(512, 80, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+eval cate cate_feat:torch.Size([1, 512, 12, 12]) cate_pred:torch.Size([1, 12, 12, 80])
+i:0, kernel_layer:ConvModule(
+  (conv): Conv2d(258, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:1, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:2, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:3, kernel_layer:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:0, cate_conv:ConvModule(
+  (conv): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:1, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:2, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)i:3, cate_conv:ConvModule(
+  (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (gn): GroupNorm(32, 512, eps=1e-05, affine=True)
+  (activate): ReLU(inplace=True)
+)==================================================================================
+featmap_sizes:[torch.Size([100, 152]), torch.Size([100, 152]), torch.Size([50, 76]), torch.Size([25, 38]), torch.Size([25, 38])], 
+upsampled_size:(200, 304)
+feat: torch.Size([1, 256, 200, 304])
+feat: torch.Size([1, 256, 100, 152])
+feat: torch.Size([1, 256, 50, 76])
+feat: torch.Size([1, 256, 25, 38])
+feat: torch.Size([1, 256, 13, 19])
+new_feat: torch.Size([1, 256, 100, 152])
+new_feat: torch.Size([1, 256, 100, 152])
+new_feat: torch.Size([1, 256, 50, 76])
+new_feat: torch.Size([1, 256, 25, 38])
+new_feat: torch.Size([1, 256, 25, 38])
+cate_pred_len:5
+kernel_pred_len:5
+cate_pred:torch.Size([1, 40, 40, 80]), kernel_pred:torch.Size([1, 256, 40, 40])
+cate_pred:torch.Size([1, 36, 36, 80]), kernel_pred:torch.Size([1, 256, 36, 36])
+cate_pred:torch.Size([1, 24, 24, 80]), kernel_pred:torch.Size([1, 256, 24, 24])
+cate_pred:torch.Size([1, 16, 16, 80]), kernel_pred:torch.Size([1, 256, 16, 16])
+cate_pred:torch.Size([1, 12, 12, 80]), kernel_pred:torch.Size([1, 256, 12, 12])
+
+=========================get_seg=================================
+num_levels:5 featmap_size:torch.Size([200, 304]) 
+img_metas:[{'filename': '/home/sqc/learn/code/segmentation/SOLO/demo/demo.jpg', 'ori_shape': (427, 640, 3), 'img_shape': (800, 1199, 3), 'pad_shape': (800, 1216, 3), 'scale_factor': 1.873536299765808, 'flip': False, 'img_norm_cfg': {'mean': array([123.675, 116.28 , 103.53 ], dtype=float32), 'std': array([58.395, 57.12 , 57.375], dtype=float32), 'to_rgb': True}}] 
+kernel_preds:5
+seg_pred:torch.Size([1, 256, 200, 304])seg_pred_0:torch.Size([256, 200, 304])
+cate_pred_list:3872  
+kernel_pred_list:3872 
+seg_pred_list:1
+cate_pred_0:torch.Size([80])  
+kernel_pred_0:torch.Size([256]) 
+seg_pred_0:torch.Size([256, 200, 304])
+=========================get_seg_single=================================
+upsampled_size_out:(800, 1216)
+ cate_scores:torch.Size([153])
+ inds:torch.Size([3872, 80])
+222 inds:torch.Size([153, 2])
+cate_labels:torch.Size([153])
+kernel_preds:torch.Size([153, 256])
+size_trans:tensor([1600, 2896, 3472, 3728, 3872], device='cuda:0')
+self.seg_num_grids:[40, 36, 24, 16, 12]
+strides:torch.Size([3872])
+self.strides:[8, 8, 16, 32, 32]
+222strides:torch.Size([153])
+111seg_preds:torch.Size([1, 256, 200, 304]) kernel_preds:torch.Size([153, 256, 1, 1])
+222seg_preds:torch.Size([153, 200, 304]) kernel_preds:torch.Size([153, 256, 1, 1])
+seg_masks:torch.Size([153, 200, 304]) sum_masks:torch.Size([153])
+keep:torch.Size([153]) sum_masks:torch.Size([153]) strides:torch.Size([153])
+keep:torch.Size([153])
+seg_masks:torch.Size([153, 200, 304])
+seg_preds:torch.Size([153, 200, 304])
+sum_masks:torch.Size([153])
+nms seg_preds:torch.Size([98, 200, 304])
+cate_scores:torch.Size([98])
+predicts seg_masks:torch.Size([98, 427, 640])
+cate_labels:torch.Size([98])
+cate_scores:torch.Size([98])

@@ -1,0 +1,4 @@
+abbrgn, norm_layer:<class 'torch.nn.modules.normalization.GroupNorm'> 
+num_features:512 
+cfg_:{'num_groups': 32, 'requires_grad': True}
+requires_grad:True

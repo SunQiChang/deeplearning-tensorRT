@@ -1,0 +1,51 @@
+i:0 l_conv:ConvModule(
+  (conv): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+),
+fpn_conv:ConvModule(
+  (conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+)
+i:1 l_conv:ConvModule(
+  (conv): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1))
+),
+fpn_conv:ConvModule(
+  (conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+)
+i:2 l_conv:ConvModule(
+  (conv): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1))
+),
+fpn_conv:ConvModule(
+  (conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+)
+i:3 l_conv:ConvModule(
+  (conv): Conv2d(2048, 256, kernel_size=(1, 1), stride=(1, 1))
+),
+fpn_conv:ConvModule(
+  (conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+)
+line:109 len_lateral:4  len_inputs:4 start_level:0
+i:0 input:torch.Size([1, 256, 200, 304])
+i:1 input:torch.Size([1, 512, 100, 152])
+i:2 input:torch.Size([1, 1024, 50, 76])
+i:3 input:torch.Size([1, 2048, 25, 38])
+1i:0 laterals_out:torch.Size([1, 256, 200, 304])
+1i:1 laterals_out:torch.Size([1, 256, 100, 152])
+1i:2 laterals_out:torch.Size([1, 256, 50, 76])
+1i:3 laterals_out:torch.Size([1, 256, 25, 38])
+2i:0 laterals_out:torch.Size([1, 256, 200, 304])
+2i:1 laterals_out:torch.Size([1, 256, 100, 152])
+2i:2 laterals_out:torch.Size([1, 256, 50, 76])
+2i:3 laterals_out:torch.Size([1, 256, 25, 38])
+i:0 fpn_out:torch.Size([1, 256, 200, 304])
+i:1 fpn_out:torch.Size([1, 256, 100, 152])
+i:2 fpn_out:torch.Size([1, 256, 50, 76])
+i:3 fpn_out:torch.Size([1, 256, 25, 38])
+self.num_outs:5
+self.add_extra_convs:False
+self.extra_convs_on_inputs:True
+self.relu_before_extra_convs:False
+used_backbone_levels:4
+i:0 fpn_out:torch.Size([1, 256, 200, 304])
+i:1 fpn_out:torch.Size([1, 256, 100, 152])
+i:2 fpn_out:torch.Size([1, 256, 50, 76])
+i:3 fpn_out:torch.Size([1, 256, 25, 38])
+i:4 fpn_out:torch.Size([1, 256, 13, 19])

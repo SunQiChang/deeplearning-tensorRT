@@ -1,0 +1,62 @@
+i:0 input:torch.Size([1, 256, 200, 304])
+i:1 input:torch.Size([1, 256, 100, 152])
+i:2 input:torch.Size([1, 256, 50, 76])
+i:3 input:torch.Size([1, 256, 25, 38])
+i:0 convs_all_levels:Sequential(
+  (conv0): ConvModule(
+    (conv): Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (gn): GroupNorm(32, 128, eps=1e-05, affine=True)
+    (activate): ReLU()
+  )
+)
+i:1 convs_all_levels:Sequential(
+  (conv0): ConvModule(
+    (conv): Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (gn): GroupNorm(32, 128, eps=1e-05, affine=True)
+    (activate): ReLU()
+  )
+  (upsample0): Upsample(scale_factor=2.0, mode=bilinear)
+)
+i:2 convs_all_levels:Sequential(
+  (conv0): ConvModule(
+    (conv): Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (gn): GroupNorm(32, 128, eps=1e-05, affine=True)
+    (activate): ReLU()
+  )
+  (upsample0): Upsample(scale_factor=2.0, mode=bilinear)
+  (conv1): ConvModule(
+    (conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (gn): GroupNorm(32, 128, eps=1e-05, affine=True)
+    (activate): ReLU()
+  )
+  (upsample1): Upsample(scale_factor=2.0, mode=bilinear)
+)
+i:3 convs_all_levels:Sequential(
+  (conv0): ConvModule(
+    (conv): Conv2d(258, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (gn): GroupNorm(32, 128, eps=1e-05, affine=True)
+    (activate): ReLU()
+  )
+  (upsample0): Upsample(scale_factor=2.0, mode=bilinear)
+  (conv1): ConvModule(
+    (conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (gn): GroupNorm(32, 128, eps=1e-05, affine=True)
+    (activate): ReLU()
+  )
+  (upsample1): Upsample(scale_factor=2.0, mode=bilinear)
+  (conv2): ConvModule(
+    (conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (gn): GroupNorm(32, 128, eps=1e-05, affine=True)
+    (activate): ReLU()
+  )
+  (upsample2): Upsample(scale_factor=2.0, mode=bilinear)
+)
+self.conv_pred:Sequential(
+  (0): ConvModule(
+    (conv): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (gn): GroupNorm(32, 256, eps=1e-05, affine=True)
+    (activate): ReLU(inplace=True)
+  )
+)
+coord_feat i:3 input:torch.Size([1, 258, 25, 38])
+feature_add_all_level:torch.Size([1, 128, 200, 304])
